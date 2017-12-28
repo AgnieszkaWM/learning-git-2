@@ -54,9 +54,16 @@ p {
 	font-size: 1.5rem;
 	padding-top: 1rem;
 }
-.photos img {
-	display: inline-block;
-	float: left;
-	margin: 0;
+.photos {
 	padding: 0;
+	margin: 0;
+}
+.footer {
+	background-color: #5a5d5d;
+}
+.footer >p {
+	padding: 0;
+}
+.text3>p {
+	padding-bottom: 3rem;
 }
