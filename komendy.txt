@@ -1,0 +1,29 @@
+ -o, --output FILE        set output file
+ 
+You can specify output file or directory by '-o' argument.
+  For several input files you can specify only output directory by '-d'.
+
+  Output CSS will be written to stdout stream on '-o -' argument or stdin input.
+
+Nu-html-checker
+
+To check one or more documents from the command line:
+
+  java -jar ~/vnu.jar FILE.html FILE2.html FILE3.HTML FILE4.html...
+
+To check all documents in a particular directory:
+
+  java -jar ~/vnu.jar some-directory-name/
+To check all documents in a particular directory, skipping any documents whose names don’t end with the extensions .html, .htm, .xhtml, or .xht:
+
+  java -jar ~/vnu.jar --skip-non-html some-directory-name/
+To check a Web document:
+
+  java -jar ~/vnu.jar URL
+
+  example: java -jar ~/vnu.jar http://example.com/foo
+To check standard input:
+
+  java -jar ~/vnu.jar -
+
+  example: echo '<!doctype html><title>...' | java -jar ~/vnu.jar -
